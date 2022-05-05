@@ -1,0 +1,3 @@
+/home/josue/Documentos/GitHub/GSL-Examples/Crear datos y graficar/build/CMakeFiles/main.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Crear datos y graficar/build/CMakeFiles/edit_cache.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Crear datos y graficar/build/CMakeFiles/rebuild_cache.dir
