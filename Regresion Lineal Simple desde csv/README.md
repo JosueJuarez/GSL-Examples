@@ -1,5 +1,7 @@
 Regresión lineal simple usando datos de un archivo "data.csv" que contiene datos generados aleatoriamente.
 
+Realiza un ajuste de acuerdo al modelo $Y = c_{0} + c_{1}*X$
+
 La salida del programa es la siguiente:
 
          Read 50 values.

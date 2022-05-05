@@ -7,3 +7,7 @@ Las siguientes lineas son para compilar:
 		LD_LIBRARY_PATH=/usr/local/lib
 		export LD_LIBRARY_PATH
 		./a.out
+
+La salida del programa es la siguiente:
+
+		J0(5) = -1.775967713143382642e-01
