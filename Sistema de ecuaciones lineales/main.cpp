@@ -1,24 +1,28 @@
 #include <stdio.h>
 #include <gsl/gsl_linalg.h>
 
+// Se busca la solución del sistema Ax=b 
+
 int main(void)
 {
 	double a_data[] = { 0.18, 0.60, 0.57, 0.96,
 						0.41, 0.24, 0.99, 0.58,
 						0.14, 0.30, 0.97, 0.66,
-						0.51, 0.13, 0.19, 0.85 };
+						0.51, 0.13, 0.19, 0.85 }; //Datos matriz A
 
-	double b_data[] = { 1.0, 2.0, 3.0, 4.0 };
+	double b_data[] = { 1.0, 2.0, 3.0, 4.0 }; //Datos vector b
 
-	gsl_matrix_view m = gsl_matrix_view_array(a_data, 4, 4);
-	gsl_vector_view b = gsl_vector_view_array(b_data, 4);
-	gsl_vector *x = gsl_vector_alloc(4);
+	gsl_matrix_view m = gsl_matrix_view_array(a_data, 4, 4); //Se convierten en una matriz de gsl
+	gsl_vector_view b = gsl_vector_view_array(b_data, 4); //Se convieten en un vector de gsl
+	gsl_vector *x = gsl_vector_alloc(4); //Se define el vector solución x
 
 	int s;
+	//Solución del sistema mediante factorización LU
 	gsl_permutation *p = gsl_permutation_alloc(4);
 	gsl_linalg_LU_decomp(&m.matrix, p, &s);
 	gsl_linalg_LU_solve(&m.matrix, p, &b.vector, x);
 
+	//Imprimir solución
 	printf("x = \n");
 	gsl_vector_fprintf(stdout, x, "%g");
 

@@ -2,22 +2,26 @@
 #include <gsl/gsl_math.h>
 #include <gsl/gsl_eigen.h>
 
+//Busca los valores y vectores propios de la matriz M ( Mv = c*v) 
+
 int main(void)
 {
 	double data[] = { 1.0 , 1/2.0, 1/3.0, 1/4.0,
 					1/2.0, 1/3.0, 1/4.0, 1/5.0,
 					1/3.0, 1/4.0, 1/5.0, 1/6.0,
-					1/4.0, 1/5.0, 1/6.0, 1/7.0 };
+					1/4.0, 1/5.0, 1/6.0, 1/7.0 }; // Datos de la matriz M
 	
-	gsl_matrix_view m = gsl_matrix_view_array(data, 4, 4);
-	gsl_vector *eval = gsl_vector_alloc(4);
-	gsl_matrix *evec = gsl_matrix_alloc(4, 4);
+	gsl_matrix_view m = gsl_matrix_view_array(data, 4, 4); //Se convierte a una atriz de gsl
+	gsl_vector *eval = gsl_vector_alloc(4); //vector de gsl para guardar los valores propios
+	gsl_matrix *evec = gsl_matrix_alloc(4, 4); //Matriz de gsl para guardar los vectores propios
 	
+	//Proceso de calculos
 	gsl_eigen_symmv_workspace *w = gsl_eigen_symmv_alloc(4);
-	gsl_eigen_symmv(&m.matrix, eval, evec, w);
+	gsl_eigen_symmv(&m.matrix, eval, evec, w); //Calculo de los valores y vectores propios
 	gsl_eigen_symmv_free(w);
-	gsl_eigen_symmv_sort(eval, evec, GSL_EIGEN_SORT_ABS_ASC);
+	gsl_eigen_symmv_sort(eval, evec, GSL_EIGEN_SORT_ABS_ASC); //Ordena los resltados
 
+	//Imprimir resultados
 	{
 	int i;
 	for (i = 0; i < 4; i++)

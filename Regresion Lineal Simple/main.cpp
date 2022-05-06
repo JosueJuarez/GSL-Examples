@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <gsl/gsl_fit.h>
 
+//Regresión lineal simple, ajusta el modelo Y = c0 + c1*X
+
 int main(void)
 {
+	//Datos ingresados a mano
 	int i, n = 4;
 	double x[4] = { 1970, 1980, 1990, 2000 };
 	double y[4] = { 12, 11, 14, 13 };
@@ -11,8 +14,9 @@ int main(void)
 
 	gsl_fit_wlinear (x, 1, w, 1, y, 1, n,
 		&c0, &c1, &cov00, &cov01, &cov11,
-		&chisq);
+		&chisq); //Ajuste del modelo
 
+	//Imprimir resultados
 	printf ("# best fit: Y = %g + %g X\n", c0, c1);
 	printf ("# covariance matrix:\n");
 	printf ("# [ %g, %g\n# %g, %g]\n",
