@@ -1,10 +1,8 @@
 Ejemplo obtenido de  https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf
 
 Calcula númericamente la integral
-$I = \int_{\infty}^{\infty} \exp(-x^2)*(x^m + 1)dx$
-El valor exacto de la integral depende del número $m$
-$I = \sqrt{\pi} + \Gamma((m+1)/2)$, si $m$ es par, $\Gamma(x)$ es la función Gamma
-$I = \sqrt{\pi}$, si $m$ es impar
+
+![Integral](./Eqn.png)
 
 La salida del programa es la siguiente:
 

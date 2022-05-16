@@ -1,7 +1,8 @@
 Ejemplo obtenido de https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf
 
 Calcula el valor de la integral
-$\int_{\infty}^{\infty} x^{-1/2}*\log(x)dx = 4$
+
+![Integral](./Eqn.png)
 
 La salida del programa es:
 

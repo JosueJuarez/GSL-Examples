@@ -1,4 +1,5 @@
 #include <stdio.h>
+//#include <complex.h>
 #include <gsl/gsl_complex.h>
 #include <gsl/gsl_complex_math.h>
  
@@ -8,29 +9,38 @@ int main()
 	int n = 500;
 	int matriz[n][n];
 	int iter;
-	gsl_complex z0, z;
+	//double infty = 10000000.0;
+	gsl_complex z0, zi, z, z2;
 	fptr = fopen("data.txt","w"); //Crea y abre el archivo txt
 
 	for(int x = 0; x < n; x++)
 	{
 		for(int y = 0; y < n; y++)
 		{
-			GSL_REAL(z0) = x; //parte real
-			GSL_IMAG(z0) = y; //parte imaginaria
-			z = z0;
-			while(gsl_complex_abs(z) < 4 && iter < 1000)
+			GSL_SET_COMPLEX(&z0, x, y);
+			GSL_SET_COMPLEX(&z, 0, 0);
+			//printf("%d" " " "%d" "|" "%f" " " "%f\n", x, y, GSL_REAL(z), GSL_IMAG(z));
+
+			iter = 0;
+			while(gsl_complex_abs(z) < 1e8 && iter < 1000)
 			{
-				z = gsl_complex_add(gsl_complex_pow_real(z, 2),z0);
+				z2 = gsl_complex_pow_real(z, 2);
+				//printf("%f" " " "%f" "|" "%d\n", GSL_REAL(z2), GSL_IMAG(z2), iter);
+				zi = gsl_complex_add(z2, z0);
+				GSL_REAL(z) = GSL_REAL(zi);
+				GSL_IMAG(z) = GSL_IMAG(zi);
+				
 				iter += 1;
 			}
-
-			if(iter == 1000)
+			
+			
+			if(gsl_complex_abs(z) > 1e8 || iter == 500)
 			{
-				matriz[x][y] = 1;
+				matriz[x][y] = 0;
 			}
 			else
 			{
-				matriz[x][y] = 0;
+				matriz[x][y] = 1;
 			}
 			
 		}
@@ -46,7 +56,7 @@ int main()
 			}
 			else
 			{
-				fprintf(fptr,"%i", matriz[n][n]);
+				fprintf(fptr,"%i" " ", matriz[n][n]);
 			}
 			
 		}
