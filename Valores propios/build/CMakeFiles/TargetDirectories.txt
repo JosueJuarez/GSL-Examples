@@ -1,3 +1,0 @@
-/home/josue/Documentos/GitHub/GSL-Examples/Valores propios/build/CMakeFiles/main.dir
-/home/josue/Documentos/GitHub/GSL-Examples/Valores propios/build/CMakeFiles/edit_cache.dir
-/home/josue/Documentos/GitHub/GSL-Examples/Valores propios/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/josue/Documentos/GitHub/GSL-Examples/Probabilidad y Estadística/Estadistica/build/CMakeFiles/main.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Probabilidad y Estadística/Estadistica/build/CMakeFiles/edit_cache.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Probabilidad y Estadística/Estadistica/build/CMakeFiles/rebuild_cache.dir
