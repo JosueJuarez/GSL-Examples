@@ -2,12 +2,24 @@
 
 ![Hamiltoniano](H.png)
 
-La dinámica del sistema esta dado por el sistema de ecuaciones diferenciales
+de las ecuaciones de Hamilton,
+
+\begin{equation}
+\dot{x_i} = \frac{\partial H}{\partial p_i}
+\end{equation}
+
+\begin{equation}
+\dot{p_i} = - \frac{\partial H}{\partial q_i}
+\end{equation}
+
+se eobtienen las 4 ecuacionese de movimiento:
 
 ![Sistema de ecuaciones](sys.png)
 
 La salida del programa es el archivo "data.csv"
 
 ![Gráfica](grafica.png)
+
+![Animación](animacion.gif)
 
 ![Energía](grafica2.png)
