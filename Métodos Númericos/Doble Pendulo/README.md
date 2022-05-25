@@ -47,9 +47,7 @@ siendo
 $$h_1 = \frac{p_{\theta_1}p_{\theta_2}\sin(\theta_1 - \theta_2)}
 {l_1l_2\left[m_1 + m_2\sin^2(\theta_1 - \theta_2)\right]}$$
 
-$$h_2 = \frac{m_2 l_2^2 p^2_{\theta_1} + (m_1 + m_2)l_1^2 p^2_{\theta_2}
-- 2 m_2 l_1l_2 p_{\theta_1}p_{\theta_2}\cos(\theta_1 - \theta_2)}
-{2l_1^2l_2^2 \left[m_1 + m_2\sin^2(\theta_1 - \theta_2)\right]^2}$$
+$$h_2 = \frac{m_2 l_2^2 p^2_{\theta_1} + (m_1 + m_2)l_1^2 p^2_{\theta_2} - 2 m_2 l_1l_2 p_{\theta_1}p_{\theta_2}\cos(\theta_1 - \theta_2)}{2l_1^2 l_2^2 \left[m_1 + m_2\sin^2(\theta_1 - \theta_2)\right]^2}$$
 
 La salida del programa es el archivo data.csv
 

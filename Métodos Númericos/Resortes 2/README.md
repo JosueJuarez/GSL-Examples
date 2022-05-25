@@ -11,10 +11,15 @@ $$\dot{p_i} = - \frac{\partial H}{\partial q_i},$$
 se eobtienen las 4 ecuacionese de movimiento:
 
 $$ \dot^{x_{1}} = \frac{p_{1}}{m_{1}}, $$
+
 $$ \dot^{x_{2}} = \frac{p_{2}}{m_{2}}, $$
+
 $$ \dot^{x_{3}} = \frac{p_{3}}{m_{3}}, $$
+
 $$ \dot^{p_{1}} = -k_{1} x_{1} + k_{2} (x_{2} - x_{1})$$
+
 $$ \dot^{p_{2}} = -k_{2} (x_{2} - x_{1}) + k_{3} (x_{3} - x_{2})$$
+
 $$ \dot^{p_{3}} = -k_{3} (x_{3} - x_{2}) + k_{4} x_{3}$$
 
 La salida del programa es el archivo "data.csv"
