@@ -1,16 +1,12 @@
- Sean m1, m2 las masas de dos partículas conectadas por tres resortes con constantes elásticas k1, k2 y k3. El hamiltoniano del sistema esta dado por
+ Sean $m_1$, $m_2$ las masas de dos partículas conectadas por tres resortes con constantes elásticas $k_1$, $k_2$ y $k_3$. El hamiltoniano del sistema esta dado por
 
 ![Hamiltoniano](H.png)
 
 de las ecuaciones de Hamilton,
 
-\begin{equation}
-\dot{x_i} = \frac{\partial H}{\partial p_i}
-\end{equation}
+$$\dot{x_i} = \frac{\partial H}{\partial p_i}$$
 
-\begin{equation}
-\dot{p_i} = - \frac{\partial H}{\partial q_i}
-\end{equation}
+$$\dot{p_i} = - \frac{\partial H}{\partial q_i}$$
 
 se eobtienen las 4 ecuacionese de movimiento:
 
