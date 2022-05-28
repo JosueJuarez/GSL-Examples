@@ -42,8 +42,8 @@ Definimos
 $$ u(x_0, x_l, x) = 
 \begin{cases}
 0, &   \text{si $x < x_0$} \\
-1, &  \text{si x_0 \leq x < x_l} \\
-0, &  \text{si  & x > x_l}
+1, &  \text{si $x_0 \leq x < x_l$} \\
+0, &  \text{si $x > x_l$}
 \end{cases}$$
 
 el cual representa un pulso entre los valores $x_0$ y $x_l$.
