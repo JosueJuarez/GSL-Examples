@@ -38,14 +38,14 @@ $$u_i^{n+1} = u_i^n - c \frac{\Delta t}{\Delta x}(u_i^n-u_{i-1}^n).$$
 #Ejemplo
 -------------------------
 Definimos
-\begin{equation}
-u(x_0, x_l, x)= \left\{ \begin{array}{lcc}
+
+$$u(x_0, x_l, x)= \left\{ \begin{array}{lcc}
              0 &   si  & x < x_0 \\
              \\ 1 &  si & x_0 \leq x < x_l \\
              \\ 0 &  si  & x > x_l 
              \end{array}
-   \right.,
-\end{equation}
+   \right.,$$
+
 el cual representa un pulso entre los valores $x_0$ y $x_l$.
 
 El programa regresa la función en el tiempo $t=0$ y la función despues de un tiempo $t=T$ en el archivo .csv.
