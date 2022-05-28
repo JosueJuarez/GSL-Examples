@@ -1,0 +1,3 @@
+/home/josue/Documentos/GitHub/GSL-Examples/Métodos Númericos/Conveccion Lineal 1D/build/CMakeFiles/main.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Métodos Númericos/Conveccion Lineal 1D/build/CMakeFiles/edit_cache.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Métodos Númericos/Conveccion Lineal 1D/build/CMakeFiles/rebuild_cache.dir
