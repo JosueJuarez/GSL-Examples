@@ -39,12 +39,14 @@ $$u_i^{n+1} = u_i^n - c \frac{\Delta t}{\Delta x}(u_i^n-u_{i-1}^n).$$
 -------------------------
 Definimos
 
-$$u(x_0, x_l, x)= \left\{ \begin{array}{lcc}
+$$ u(x_0, x_l, x) = 
+
+\left\{ \begin{array}{lcc}
              0 &   si  & x < x_0 \\
              \\ 1 &  si & x_0 \leq x < x_l \\
              \\ 0 &  si  & x > x_l 
              \end{array}
-   \right.,$$
+   \right., $$
 
 el cual representa un pulso entre los valores $x_0$ y $x_l$.
 
