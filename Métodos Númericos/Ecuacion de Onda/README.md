@@ -22,7 +22,7 @@ Para la evolución se requiere de las condiciones iniciales y de frontera
 $$ \begin{cases}
 u_{i,0} &= f(x_i), & \text{para $i = 1,\ldots,N_{x}$} \\
 u_{0,n} &= 0, & \text{para $n = 1,\ldots, N_{t}$} \\
-u_{N+1,n} &= 0, & \text{para $n = 1,\ldots, N_{t}$} \end{cases}$$
+u_{N_{x}+1,n} &= 0, & \text{para $n = 1,\ldots, N_{t}$} \end{cases}$$
 
 además para $n=1$ se necesita la información de $u_{i,1}$, el cual se obtiene mediante la condición inicial
 
@@ -30,7 +30,7 @@ $$ \frac{\partial u}{\partial t}(x,0) = g(x),$$
 
 $x \in [0,L]$, y mediante las diferencias finitas se obtiene
 
-$$ u_{i,1} = (1 -\lambda^2}) f(x_{i}) + \frac{\lambda^2}{2} [ f(x_{i+1}) + f(x_{i-1}) ] + dt g(x_{i})$$
+$$ u_{i,1} = (1 -\lambda^2) f(x_{i}) + \frac{\lambda^2}{2} [ f(x_{i+1}) + f(x_{i-1}) ] + dt g(x_{i})$$
 
 # Ejemplo
 -----------
@@ -38,6 +38,7 @@ $$ u_{i,1} = (1 -\lambda^2}) f(x_{i}) + \frac{\lambda^2}{2} [ f(x_{i+1}) + f(x_{
 Condición inicial
 
 $$ u(x,0) = \sin(\pi x),$$
+
 $$ \frac{\partial u}{\partial t}(x,0) = 0.$$
 
 Para más detalles, consultar http://gmc.geofisica.unam.mx/papime2020/Descargables/presentaciones-metodosnumericos/06_EcuacionDeOnda.pdf
