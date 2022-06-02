@@ -1,8 +1,8 @@
-Ejemplo obtenido de https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf
+Ejemplo obtenido de https://www.gnu.org/software/gsl/doc/html/integration.html#adaptive-integration-example
 
 Calcula el valor de la integral
 
-![Integral](./Eqn.png)
+$$ \int_{0}^{1} x^{-1/2} \log(x) dx = -4$$
 
 La salida del programa es:
 

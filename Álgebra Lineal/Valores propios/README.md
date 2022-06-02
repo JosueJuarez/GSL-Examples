@@ -1,4 +1,4 @@
-Ejemplo de https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf
+Ejemplo de https://www.gnu.org/software/gsl/doc/html/eigen.html#examples
 
 Calcula los valores propios de la matriz indicada.
 

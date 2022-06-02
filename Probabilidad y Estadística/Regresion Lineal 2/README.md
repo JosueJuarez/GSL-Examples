@@ -1,6 +1,7 @@
 Regresión lineal usando datos de un archivo "data.csv" que contiene datos generados aleatoriamente de una función exponencial con ruido.
 
-Realiza un ajuste de acuerdo al modelo $Y = c_{0} + c_{1}*X + c_{2}*X^2$, mediante la ecuación maestra $\hat{X} = (A^T*A)^{-1}*A^{T}*Y$
+Realiza un ajuste de acuerdo al modelo $Y = c_{0} + c_{1} X + c_{2} X^{2}$, mediante la ecuación maestra $\hat{X} = (A^{T}A)^{-1}A^{T}Y$
+
 
 La salida del programa es la siguiente:
 

@@ -1,4 +1,4 @@
-Ejemplo modificado de: https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf
+Ejemplo modificado de: https://www.gnu.org/software/gsl/doc/html/lls.html#multi-parameter-linear-regression-example
 
 Regresión lineal usando datos de un archivo "data.csv" que contiene datos generados aleatoriamente de una función exponencial con ruido.
 

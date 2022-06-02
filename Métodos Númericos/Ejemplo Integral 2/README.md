@@ -1,4 +1,4 @@
-Ejemplo obtenido de  https://www.gnu.org/software/gsl/doc/latex/gsl-ref.pdf
+Ejemplo obtenido de  https://www.gnu.org/software/gsl/doc/html/integration.html#fixed-point-quadrature-example
 
 Calcula númericamente la integral
 
