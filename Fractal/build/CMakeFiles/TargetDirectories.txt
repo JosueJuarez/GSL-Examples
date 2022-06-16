@@ -1,3 +1,0 @@
-/home/josue/Documentos/GitHub/GSL-Examples/Fractal/build/CMakeFiles/main.dir
-/home/josue/Documentos/GitHub/GSL-Examples/Fractal/build/CMakeFiles/edit_cache.dir
-/home/josue/Documentos/GitHub/GSL-Examples/Fractal/build/CMakeFiles/rebuild_cache.dir

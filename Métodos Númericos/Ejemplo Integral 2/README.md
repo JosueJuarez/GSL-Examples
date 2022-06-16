@@ -1,6 +1,6 @@
 Ejemplo obtenido de  https://www.gnu.org/software/gsl/doc/html/integration.html#fixed-point-quadrature-example
 
-Calcula númericamente la integral
+Calcula numéricamente la integral
 
 ![Integral](./Eqn.png)
 

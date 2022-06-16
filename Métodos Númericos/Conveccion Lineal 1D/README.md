@@ -29,9 +29,9 @@ Si discretizamos la coordenada espacial en el conjunto de puntos  $x = (x_1, \do
 
 $$\frac{u_i^{n+1}-u_i^n}{\Delta t} + c \frac{u_i^n - u_{i-1}^n}{\Delta x} = 0,$$
 
-donde para la derivada temporal, se utiliza una diferenciación hacia adelante, y hacia atras para la derivada espacial. Dependiendo de que tan pequeños sean los $\Delta x$ y $\Delta t$ la aproximación es mas parecida a la derivada real.
+donde para la derivada temporal, se utiliza una diferenciación hacia adelante, y hacia atrás para la derivada espacial. Dependiendo de que tan pequeños sean los $\Delta x$ y $\Delta t$ la aproximación es mas parecida a la derivada real.
 
-$n$ y $n-1$ representan dos pasos consecutivos en el tiempo, mientras que $i$ e $i-1$ son dos puntos vecinos de la coordenada $x$ discretizada. Si la condición inicial esta dada, entonces el valor $u_i^{n+1}$ es la unica incognita en la ecuación discretizada. Si despejamos para esta función obtenemos una equación que permite avanzar en el tiempo
+$n$ y $n-1$ representan dos pasos consecutivos en el tiempo, mientras que $i$ e $i-1$ son dos puntos vecinos de la coordenada $x$ discretizada. Si la condición inicial esta dada, entonces el valor $u_i^{n+1}$ es la única incógnita en la ecuación discretizada. Si despejamos para esta función obtenemos una equación que permite avanzar en el tiempo
 
 $$u_i^{n+1} = u_i^n - c \frac{\Delta t}{\Delta x}(u_i^n-u_{i-1}^n).$$
 
@@ -48,6 +48,6 @@ $$ u(x_0, x_l, x) =
 
 el cual representa un pulso entre los valores $x_0$ y $x_l$.
 
-El programa regresa la función en el tiempo $t=0$ y la función despues de un tiempo $t=T$ en el archivo .csv.
+El programa regresa la función en el tiempo $t=0$ y la función después de un tiempo $t=T$ en el archivo .csv.
 
 ![Gráfica](grafica.png)

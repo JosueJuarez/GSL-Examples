@@ -10,13 +10,13 @@ La salida del programa es la siguiente:
                 # best fit: Y = 1.10055 + 0.391512 X + 1.21488 X^2
 
 
-![Regresión Lineal Simple (ecación maestra)](./grafica.png)
+![Regresión Lineal Simple (ecuación maestra)](./grafica.png)
 
 Comparación con el primer ejemplo de Regresión Lineal
 
 ![Comparación](./grafica2.png)
 
-# Creditos
+# Créditos
 
  La lectura del archivo .csv es mediante el archivo tipo header "rapidcsv.h"; https://github.com/d99kris/rapidcsv
 

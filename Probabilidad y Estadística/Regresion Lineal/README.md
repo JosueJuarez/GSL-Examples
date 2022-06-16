@@ -19,6 +19,6 @@ La salida del programa es la siguiente:
 
 ![Regresión Lineal Simple](./grafica.png)
 
-# Creditos
+# Créditos
 
  La lectura del archivo .csv es mediante el archivo tipo header "rapidcsv.h"; https://github.com/d99kris/rapidcsv

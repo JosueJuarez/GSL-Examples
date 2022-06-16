@@ -3,15 +3,15 @@
 
 La ecuación de onda es:
 
-$$ \frac{\partial^2 u}{\partial t^2} - c^2 \frac{\partial^2}{\partial x^2} = 0$$
+$$ \frac{\partial^2 u}{\partial t^2} - c^2 \frac{\partial^2 u}{\partial x^2} = 0$$
 
 Las aproximaciones de las segundas derivadas son:
 
 $$ \frac{\partial^2 u}{\partial t^2}(x_{i},t_{n}) = \frac{u_{1,n+1} - 2 u_{i,n} + u_{i,n-1}}{dt^2} + O(dt^2),$$
 
-$$ \frac{\partial^2}{\partial x^2}(x_{i},t_{n}) = \frac{u_{i+1,n} - 2 u_{i,n} + u_{i-1,n}}{dt^2} + O(dx^2).$$
+$$ \frac{\partial^2 u}{\partial x^2}(x_{i},t_{n}) = \frac{u_{i+1,n} - 2 u_{i,n} + u_{i-1,n}}{dt^2} + O(dx^2).$$
 
-Sustituyendo y despejando para $u_{i,n+1}$ se obtiene la ecuacipon que permite avanzar en el tiempo
+Sustituyendo y despejando para $u_{i,n+1}$ se obtiene la ecuación que permite avanzar en el tiempo
 
 $$ u_{i,n+1} = 2(1 - \lambda^{2})u_{i,n} + \lambda^{2} ( u_{i+1,n} + u_{i-1,n} ) - u_{i,n-1},$$
 

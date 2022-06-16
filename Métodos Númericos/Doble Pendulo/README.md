@@ -1,4 +1,4 @@
-Sean los péndulos de masa $m_1$, $m_2$ y longitudes $l_1$, $l_2$, asi como sus coordenadas generalizadas $\theta_1$ y $\theta_2$, el Lagrangiano del sistema es
+Sean los péndulos de masa $m_1$, $m_2$ y longitudes $l_1$, $l_2$, así como sus coordenadas generalizadas $\theta_1$ y $\theta_2$, el Lagrangiano del sistema es
 
 $$L = \frac{1}{2}(m_1 + m_2) l_1^2 \dot{\theta}_1^2 + \frac{1}{2}m_2 l_2^2 \dot{\theta}_2^2 + m_2l_1l_2\dot{\theta}_1\dot{\theta}_2 \cos(\theta_1 - \theta_2) + (m_1 + m_2) g l_1 \cos\theta_1 + m_2 g l_2\cos\theta_2.$$
 
@@ -10,11 +10,11 @@ $$p_{\theta_1} = \frac{\partial L}{\partial \dot{\theta}_1} = (m_1 + m_2) l_1^2 
 
 $$p_{\theta_2} = \frac{\partial L}{\partial \dot{\theta}_2} = m_2 l_2^2 \dot{\theta}_2 + m_2 l_1 l_2 \dot{\theta}_1\cos(\theta_1-\theta_2),$$
 
-asi el Hamiltoniano del sistema es
+así el Hamiltoniano del sistema es
 
-$$H(\theta_i, \dot \theta_i) = \sum_{i=1}^2 \dot{\theta}_i p_{\theta_i} - L,$$
+$$H(\theta_{i}, \dot{\theta_{i}}) = \sum_{i=1}^{2} \dot{\theta_{i}} p_{\theta_{i}} - L,$$
 
-reescribiendolo en términos de $\theta_i$ y $p_{\theta_i}$ (ver desarrollo completo en https://diego.assencio.com/?index=e5ac36fcb129ce95a61f8e8ce0572dbf)
+reescribiéndolo en términos de $\theta_i$ y $p_{\theta_i}$ (ver desarrollo completo en https://diego.assencio.com/?index=e5ac36fcb129ce95a61f8e8ce0572dbf)
 
 $$H = \frac{m_2 l_2^2 p^2_{\theta_1} + (m_1 + m_2)l_1^2 p^2_{\theta_2} - 2m_2 l_1 l_2 p_{\theta_1}p_{\theta_2}\cos(\theta_1-\theta_2)}
 {2m_2 l_1^2l_2^2 \left[m_1 + m_2\sin^2(\theta_1 - \theta_2)\right]} - (m_1 + m_2) g l_1 \cos\theta_1 - m_2 g l_2\cos\theta_2,$$
