@@ -1,0 +1,3 @@
+/home/josue/Documentos/GitHub/GSL-Examples/Aproximacion Pi/build/CMakeFiles/main.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Aproximacion Pi/build/CMakeFiles/edit_cache.dir
+/home/josue/Documentos/GitHub/GSL-Examples/Aproximacion Pi/build/CMakeFiles/rebuild_cache.dir
