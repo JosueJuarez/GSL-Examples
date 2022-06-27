@@ -1,4 +1,4 @@
-project(Numeros_Fibonacci)
+project(Factorial)
 
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 

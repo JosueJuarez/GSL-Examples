@@ -1,0 +1,3 @@
+/home/josue/Documentos/GitHub/GSL-Examples/C++/Factorial/build/CMakeFiles/main.dir
+/home/josue/Documentos/GitHub/GSL-Examples/C++/Factorial/build/CMakeFiles/edit_cache.dir
+/home/josue/Documentos/GitHub/GSL-Examples/C++/Factorial/build/CMakeFiles/rebuild_cache.dir

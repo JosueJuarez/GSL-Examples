@@ -1,5 +1,5 @@
 CMakeFiles/main.dir/main.cpp.o: \
- /home/josue/Documentos/GitHub/GSL-Examples/Numeros\ Fibonnacci/main.cpp \
+ /home/josue/Documentos/GitHub/GSL-Examples/C++/Numeros\ Fibonacci/main.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

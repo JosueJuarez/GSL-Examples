@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/josue/Documentos/GitHub/GSL-Examples/Campo Electrico"
+CXX_INCLUDES = -I"/home/josue/Documentos/GitHub/GSL-Examples/C++/Campo Electrico"
 
 CXX_FLAGS = -g -Wall
 

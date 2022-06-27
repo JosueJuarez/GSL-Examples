@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/josue/Documentos/GitHub/GSL-Examples/Aproximacion Pi"
+CXX_INCLUDES = -I"/home/josue/Documentos/GitHub/GSL-Examples/C++/Aproximacion Pi"
 
 CXX_FLAGS = -g -Wall
 
