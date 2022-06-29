@@ -21,7 +21,7 @@ int main()
 
 	printf("arg(x) = % .18f\n", gsl_complex_arg(x)); //argumento de x
 	printf("|x| = % .18f\n", gsl_complex_abs(x)); //Valor absoluto de x
-	printf("arg(x) = % .18f\n", gsl_complex_logabs(x)); //logaritmo de |x|
+	printf("log(|x|) = % .18f\n", gsl_complex_logabs(x)); //logaritmo de |x|
 
 	z = gsl_complex_add(x,y); // x+y
 	printf ("x + y = % .18f + % .18f i \n", GSL_REAL(z), GSL_IMAG(z));
@@ -30,7 +30,8 @@ int main()
 	z = gsl_complex_mul(x,y); // x*y
 	printf ("x*y = % .18f + % .18f i \n", GSL_REAL(z), GSL_IMAG(z));
 	z = gsl_complex_div(x,y); // x/y
-	printf ("x*y = % .18f + % .18f i \n", GSL_REAL(z), GSL_IMAG(z));
+	printf ("x/y = % .18f + % .18f i \n", GSL_REAL(z), GSL_IMAG(z));
+	
 	z = gsl_complex_conjugate(x); // *x
 	printf ("*x = % .18f + % .18f i \n", GSL_REAL(z), GSL_IMAG(z));
 	z = gsl_complex_inverse(x); // 1/x
