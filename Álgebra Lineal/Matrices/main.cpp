@@ -115,7 +115,7 @@ int main(void)
     //-------------------------
 
     gsl_matrix_memcpy(E, A);
-    gsl_matrix_swap_columns(E, 0, 2); //Intercambia la columna i con la fila j
+    gsl_matrix_swap_columns(E, 0, 2); //Intercambia la columna i con la columna j
 
     printf("Intercambio de columna\n");
     printf("A' = \n");
