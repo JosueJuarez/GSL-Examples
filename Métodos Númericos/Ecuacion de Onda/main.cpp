@@ -77,6 +77,7 @@ int main()
 		fprintf(fptr, "%.5e,%.5e,%.5e\n", gsl_vector_get(x, i), gsl_vector_get(u0, i), gsl_vector_get(u, i));
 	}
 
+	fclose(fptr); //Cierra el archivo txt
 
     gsl_vector_free(x);
     gsl_vector_free(u);

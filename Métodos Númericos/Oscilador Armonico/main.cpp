@@ -70,6 +70,8 @@ int main (void)
 		//Imprimir resultados
 		fprintf(fptr, "%.5e,%.5e,%.5e\n", t, y[0], y[1]);
 	}
+
+	fclose(fptr); //Cierra el archivo txt
 	gsl_odeiv2_driver_free(d);
 
 return 0;

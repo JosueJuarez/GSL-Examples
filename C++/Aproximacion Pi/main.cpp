@@ -51,6 +51,7 @@ int main(void)
 		fprintf(fptr, "%d,%.18f\n", i, Pi(i,r));
 	}
 
+fclose(fptr); //Cierra el archivo txt
 gsl_rng_free(r);
 
 return 0;

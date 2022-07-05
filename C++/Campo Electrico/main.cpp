@@ -58,5 +58,6 @@ int main()
 		}
 	}
 
+	fclose(fptr); //Cierra el archivo txt
 	return 0;
 } 
