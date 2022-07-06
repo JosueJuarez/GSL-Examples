@@ -44,22 +44,23 @@ int main(void)
     gsl_matrix_set_zero(C); //asigna todos los valores a 0 de la matriz dada
     gsl_matrix_set_identity(D); //Crea una matriz identidad (aunque la matriz no sea cuadrada)
 
-
+    printf("Matriz creada manualmente:\n");
     printf("A = \n");
     PrintMatrix(A);
 
     printf("----------\n");
     
+    printf("Matriz constante:\n");
     printf("B = \n");
     PrintMatrix(B);
 
     printf("----------\n");
-
+    printf("Matriz de ceros:\n");
     printf("C = \n");
     PrintMatrix(C);
 
     printf("----------\n");
-
+    printf("Matriz identidad:\n");
     printf("D = \n");
     PrintMatrix(D);
 
@@ -106,7 +107,7 @@ int main(void)
     gsl_matrix_memcpy(E, A); //Copia la matriz A en la matriz E
     gsl_matrix_swap_rows(E, 0, 4); //Intercambia la fila i con la fila j
 
-    printf("Intercambio de fila\n");
+    printf("Intercambio de fila 0 con la fila 4\n");
     printf("A' = \n");
     PrintMatrix(E);
 
@@ -117,7 +118,7 @@ int main(void)
     gsl_matrix_memcpy(E, A);
     gsl_matrix_swap_columns(E, 0, 2); //Intercambia la columna i con la columna j
 
-    printf("Intercambio de columna\n");
+    printf("Intercambio de columna 0 con la columna 2\n");
     printf("A' = \n");
     PrintMatrix(E);
 
@@ -126,7 +127,7 @@ int main(void)
     //---------------------------
 
     gsl_matrix_transpose_memcpy(D, A); //copia los elementos de A transpuesta en la matriz E
-    
+    printf("Matriz transpuesta:\n");
     printf("A^T' = \n");
     PrintMatrix(D);
 
@@ -136,7 +137,7 @@ int main(void)
 
     gsl_matrix_memcpy(E, A);
     gsl_matrix_add(E, B); // suma de matrices E + B, el resultado es guardado en la matriz E
-
+    printf("Suma de matrices:\n");
     printf("A + B = \n");
     PrintMatrix(E);
 
@@ -146,7 +147,7 @@ int main(void)
 
     gsl_matrix_memcpy(E, A);
     gsl_matrix_sub(E, B); // resta de matrices E - B, el resultado es guardado en la matriz E
-
+    printf("Resta de matrices:\n");
     printf("A - B = \n");
     PrintMatrix(E);
 
@@ -156,7 +157,7 @@ int main(void)
 
     gsl_matrix_memcpy(E, A);
     gsl_matrix_mul_elements(E, B); // multiplicacion de componentes por componentes de E y B, el resultado se guarda en E
-
+    printf("Multiplicación componente por componente de matrices:\n");
     printf("A(i,j)*B(i,j) = \n");
     PrintMatrix(E);
 
@@ -166,7 +167,7 @@ int main(void)
 
     gsl_matrix_memcpy(E, A);
     gsl_matrix_div_elements(E, B); // division de componentes por componentes de E y B, el resultado se guarda en E
-
+    printf("División componente por componente de matrices:\n");
     printf("A(i,j)/B(i,j) = \n");
     PrintMatrix(E);
 
@@ -176,7 +177,7 @@ int main(void)
 
     gsl_matrix_memcpy(E, A);
     gsl_matrix_scale(E, 3.9); // Multiplica los elementos de la matriz por el valor dado
-
+    printf("Multiplicación de escalar por una matriz:\n");
     printf("3.9 A = \n");
     PrintMatrix(E);
 
@@ -186,19 +187,19 @@ int main(void)
 
     gsl_matrix_memcpy(E, A);
     gsl_matrix_add_constant(E, 3.9); // suma a los elementos de la matriz el valor dado
-
+    printf("Suma de una matriz constante con una matriz:\n");
     printf("A + 3.9 = \n");
     PrintMatrix(E);
 
     printf("----------\n");
 
     //---------------------------
-
+    printf("Máximo valor de una matriz:\n");
     printf("max(A) = " "%g\n", gsl_matrix_max(A)); //valor maximo de A
     printf("----------\n");
 
     //---------------------------
-
+    printf("Mínimo valor de una matriz:\n");
     printf("min(A) = " "%g\n", gsl_matrix_min(A)); //valor minimo de A
     printf("----------\n");
 
@@ -228,7 +229,7 @@ int main(void)
     printf("----------\n");
 
     //---------------------------
-
+    printf("Norma de una matriz:\n");
     printf("||A||_1 = " "%g\n", gsl_matrix_norm1(A)); // 1-norma de A
     printf("----------\n");
 

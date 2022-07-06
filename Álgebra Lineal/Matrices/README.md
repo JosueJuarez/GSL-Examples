@@ -2,6 +2,7 @@ Operaciones con matrices
 
 La salida del programa es la siguiente:
 
+		Matriz creada manualmente:
 		A = 
 		0.23 1.23 2.23
 		100.23 101.23 102.23
@@ -9,6 +10,7 @@ La salida del programa es la siguiente:
 		300.23 301.23 302.23
 		400.23 401.23 402.23
 		----------
+		Matriz constante:
 		B = 
 		7.52 7.52 7.52
 		7.52 7.52 7.52
@@ -16,11 +18,13 @@ La salida del programa es la siguiente:
 		7.52 7.52 7.52
 		7.52 7.52 7.52
 		----------
+		Matriz de ceros:
 		C = 
 		0 0 0
 		0 0 0
 		0 0 0
 		----------
+		Matriz identidad:
 		D = 
 		1 0 0 0 0
 		0 1 0 0 0
@@ -32,7 +36,7 @@ La salida del programa es la siguiente:
 		----------
 		Diagonal de A: 0.23 101.23 202.23 
 		----------
-		Intercambio de fila
+		Intercambio de fila 0 con la fila 4
 		A' = 
 		400.23 401.23 402.23
 		100.23 101.23 102.23
@@ -40,7 +44,7 @@ La salida del programa es la siguiente:
 		300.23 301.23 302.23
 		0.23 1.23 2.23
 		----------
-		Intercambio de columna
+		Intercambio de columna 0 con la columna 2
 		A' = 
 		2.23 1.23 0.23
 		102.23 101.23 100.23
@@ -48,11 +52,13 @@ La salida del programa es la siguiente:
 		302.23 301.23 300.23
 		402.23 401.23 400.23
 		----------
+		Matriz transpuesta:
 		A^T' = 
 		0.23 100.23 200.23 300.23 400.23
 		1.23 101.23 201.23 301.23 401.23
 		2.23 102.23 202.23 302.23 402.23
 		----------
+		Suma de matrices:
 		A + B = 
 		7.75 8.75 9.75
 		107.75 108.75 109.75
@@ -60,6 +66,7 @@ La salida del programa es la siguiente:
 		307.75 308.75 309.75
 		407.75 408.75 409.75
 		----------
+		Resta de matrices:
 		A - B = 
 		-7.29 -6.29 -5.29
 		92.71 93.71 94.71
@@ -67,6 +74,7 @@ La salida del programa es la siguiente:
 		292.71 293.71 294.71
 		392.71 393.71 394.71
 		----------
+		Multiplicación componente por componente de matrices:
 		A(i,j)*B(i,j) = 
 		1.7296 9.2496 16.7696
 		753.73 761.25 768.77
@@ -74,6 +82,7 @@ La salida del programa es la siguiente:
 		2257.73 2265.25 2272.77
 		3009.73 3017.25 3024.77
 		----------
+		División componente por componente de matrices:
 		A(i,j)/B(i,j) = 
 		0.0305851 0.163564 0.296543
 		13.3285 13.4614 13.5944
@@ -81,6 +90,7 @@ La salida del programa es la siguiente:
 		39.9242 40.0572 40.1902
 		53.2221 53.3551 53.488
 		----------
+		Multiplicación de escalar por una matriz:
 		3.9 A = 
 		0.897 4.797 8.697
 		390.897 394.797 398.697
@@ -88,6 +98,7 @@ La salida del programa es la siguiente:
 		1170.9 1174.8 1178.7
 		1560.9 1564.8 1568.7
 		----------
+		Suma de una matriz constante con una matriz:
 		A + 3.9 = 
 		4.13 5.13 6.13
 		104.13 105.13 106.13
@@ -95,8 +106,10 @@ La salida del programa es la siguiente:
 		304.13 305.13 306.13
 		404.13 405.13 406.13
 		----------
+		Máximo valor de una matriz:
 		max(A) = 402.23
 		----------
+		Mínimo valor de una matriz:
 		min(A) = 0.23
 		----------
 		¿C es nula? 1
@@ -109,6 +122,8 @@ La salida del programa es la siguiente:
 		----------
 		¿A = B? 0
 		----------
+		Norma de una matriz:
 		||A||_1 = 1011.15
 		----------
+
  
